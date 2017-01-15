@@ -1,9 +1,39 @@
-<%= form_for @article do |f| %>
-	<%= f.label :title %><br />
-	<%= f.text_field :title %><br />
+<!-- <form class="form-horizontal"> --><!-- can't use this here-->
+	<div class="row">
+		<div class="col-md-12">
 
-	<%= f.label :body %><br />
-	<%= f.text_field :body %><br />
+			<%= form_for(@article, html: {class: "form-horizontal", role: "form"}) do |f| %>
 
-	<%= f.submit %><br />
-<% end %>
+				<div class="form-group">
+					<div class="control-label col-md-2">
+						<%= f.label :title %>
+					</div>
+					<div class="col-md-5">
+						<%= f.text_field :title, class: "form-control", placeholder: "Enter title", autofocus: true %>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="control-label col-md-2">
+						<%= f.label :body %>
+					</div>
+					<div class="col-md-5">
+						<%= f.text_area :body, rows: 4, class: "form-control", placeholder: "Enter body" %>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-md-offset-2 col-md-10">	
+						<%= f.submit class: "btn btn-success" %>
+					</div>
+				</div>
+				
+			<% end %>
+
+			<div class="col-md-4 col-md-offset-2">
+				[	<%= link_to "Cancel request and return to articles listing", articles_path %> ]
+			</div>
+
+		</div>
+	</div>
+<!-- </form> -->

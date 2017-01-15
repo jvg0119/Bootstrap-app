@@ -13,6 +13,8 @@ Steps:
 	* Add Navigation bar (navbar) 	http://getbootstrap.com/components/#navbar 
 	* Add Jumbotron		http://getbootstrap.com/components/#jumbotron 
 	* Add footer
+* Style Forms 	http://getbootstrap.com/css/#forms-horizontal
+	* horizontal forms style 
 
 
 
