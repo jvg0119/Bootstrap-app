@@ -20,6 +20,9 @@ Steps:
 	* add flash message 
 * Style Messages 
 * Style Show view page
+* Style Index view page
+	* add 'edit', and 'delete' buttons
+
 
 
 
