@@ -19,6 +19,7 @@ Steps:
 	* add error message
 	* add flash message 
 * Style Messages 
+* Style Show view page
 
 
 
