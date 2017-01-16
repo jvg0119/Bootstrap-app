@@ -1,7 +1,7 @@
 <!-- <form class="form-horizontal"> --><!-- can't use this here-->
 	<div class="row">
 		<div class="col-md-12">
-
+					
 			<%= render partial: 'shared/error_message', locals: { object: @article } %>
 
 			<%= form_for(@article, html: {class: "form-horizontal", role: "form"}) do |f| %>
@@ -10,7 +10,7 @@
 					<div class="control-label col-md-2">
 						<%= f.label :title %>
 					</div>
-					<div class="col-md-5">
+					<div class="col-md-6">
 						<%= f.text_field :title, class: "form-control", placeholder: "Enter title", autofocus: true %>
 					</div>
 				</div>
@@ -19,8 +19,8 @@
 					<div class="control-label col-md-2">
 						<%= f.label :body %>
 					</div>
-					<div class="col-md-5">
-						<%= f.text_area :body, rows: 4, class: "form-control", placeholder: "Enter body" %>
+					<div class="col-md-6">
+						<%= f.text_area :body, rows: 6, class: "form-control", placeholder: "Enter body" %>
 					</div>
 				</div>
 

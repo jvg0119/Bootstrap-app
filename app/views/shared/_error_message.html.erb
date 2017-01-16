@@ -1,8 +1,20 @@
+
 <% if object.errors.any? %>
-	<h4>Please correct the <%= pluralize(object.errors.count, "error") %> to save or update record.</h4>
-	<% object.errors.full_messages.each do |msg| %>
-		<ul>
-			<li><%= msg %></li>
-		</ul>
-	<% end %>
+	<div class="row">
+		<div class="col-md-offset-2 col-md-6"> 
+			<div class="panel panel-danger">
+				 <div class="panel-heading">
+				 	<h2 class="panel-title">				 	
+						Please correct the <%= pluralize(object.errors.count, "error") %> to save or update record:</h2>
+					<div class="panel-body">
+						<% object.errors.full_messages.each do |msg| %>
+							<ul>
+								<li><%= msg %></li>
+							</ul>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 <% end %>

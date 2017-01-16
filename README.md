@@ -18,7 +18,7 @@ Steps:
 	* add Article validations
 	* add error message
 	* add flash message 
-
+* Style Messages 
 
 
 
