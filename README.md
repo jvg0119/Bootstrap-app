@@ -1,5 +1,7 @@
 # Bootstrap-app
 
+This app is just a basic bootstrap application app.
+
 twbs/bootstrap-sass			https://github.com/twbs/bootstrap-sass 
 
 Versions:
@@ -24,6 +26,7 @@ Steps:
 	* add 'edit', and 'delete' buttons
 
 
+done
 
 
 
